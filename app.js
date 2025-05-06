@@ -16,6 +16,10 @@ import authenticateRole from './middlewares/authenticateRole.js';
 import profileController from './controllers/profile.js';
 import Download from './middlewares/Download.js';
 import { setupProductsAndPlans } from './controllers/hr/plan.js';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
 // import authenticateRole from './middlewares/authenticateRole.js';
 
 
